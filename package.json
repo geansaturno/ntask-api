@@ -4,7 +4,15 @@
   "description": "Projeto Piloto do livro",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node index.js"
   },
   "author": "Gean Saturno <geansaturno@gmail.com>",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0"
+  }
 }
