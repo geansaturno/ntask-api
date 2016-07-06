@@ -1,0 +1,10 @@
+{
+  "name": "ntask-api",
+  "version": "1.0.0",
+  "description": "Projeto Piloto do livro",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Gean Saturno <geansaturno@gmail.com>",
+  "license": "GPL-3.0"
+}
