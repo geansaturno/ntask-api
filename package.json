@@ -9,6 +9,7 @@
   "author": "Gean Saturno <geansaturno@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
+    "consign": "^0.1.2",
     "express": "^4.14.0"
   },
   "devDependencies": {

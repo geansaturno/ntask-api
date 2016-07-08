@@ -1,21 +1,15 @@
 import express from "express";
-
-const PORT = 3000;
-
-const app = express();
+import consign from "consign";
 
 console.log("Iniciando projeto");
 
-app.set("json spaces", 4);
+const app = express();
 
-app.get("/", (req, res) => res.json({status: "Ntask API"}));
-app.get("/tasks", (req, res) => res.json({
-    "tasks" : [
-        {"title" : "Comprar pão"},
-        {"title" : "Namorar"},
-        {"title" : "teste"}
-    ]
-}));
+consign()
+    .include("models")
+    .then("libs/middlewares.js")
+    .then("routes")
+    .then("libs/boot.js")
+    .into(app);
 
-
-app.listen(PORT, () => console.log(`NTask API - porta ${PORT}`));
+module.export = app;
