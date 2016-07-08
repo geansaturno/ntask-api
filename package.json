@@ -10,7 +10,10 @@
   "license": "GPL-3.0",
   "dependencies": {
     "consign": "^0.1.2",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.23.4",
+    "sqlite3": "^3.1.4"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
